@@ -9,4 +9,9 @@
     "*.css": "tailwindcss"
   },
   "eslint.experimental.useFlatConfig": true,
+  "tailwindCSS.experimental.configFile": "tailwind.config.ts",
+  "tailwindCSS.experimental.classRegex": [
+    ["ui:\\s*{([^)]*)\\s*}", "[\"'`]([^\"'`]*).*?[\"'`]"],
+    ["/\\*\\s?ui\\s?\\*/\\s*{([^;]*)}", ":\\s*[\"'`]([^\"'`]*).*?[\"'`]"]
+  ],
 }
